@@ -1,0 +1,97 @@
+body{
+  margin: 0px;
+}
+
+.topBlack{
+  color:white;
+  font-family:Dancing script;
+  font-size: 92px;
+  text-align: center;
+  padding-top:30px;
+}
+
+.container{
+  display:grid;
+  height:100vh;
+  grid-template-rows: 0.25fr 0.45fr 0.3fr;
+}
+
+.topBlack{
+  background-color: rgb(0, 0, 0);
+}
+
+.downBlack{
+  display:grid;
+  border:none;
+  grid-template-columns: 0.75fr repeat(3,0.5fr) repeat(2,0.75fr) repeat(5,0.5fr) 0.75fr 1fr ;
+}
+
+.downWhite{
+  display:grid;
+  grid-template-columns: repeat(8,1fr);
+}
+
+.whiteKey{
+  border-right:1px solid rgba(141, 141, 141, 0.505);
+  border-top:none;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  position:relative;
+}
+
+.key{
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  position:relative;
+}
+
+.W{
+  border:none
+}
+
+.S{
+  border-right: 1px solid rgba(141, 141, 141, 0.505);
+}
+
+.B{
+  background-color: black;
+  border:none;
+}
+
+.pressed{
+  background: rgba(159, 159, 159, 0.11);
+}
+
+.circle{
+  background-color: rgba(39, 152, 244, 0.444);
+  height:30px;
+  width:30px;
+  border-radius:100%;
+  position:absolute;
+  bottom:20px;
+  transition: opacity 1.85s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.circleO{
+  background-color: rgba(113, 176, 243, 0.39);
+  height:70px;
+  width:70px;
+  border-radius:100%;
+  display:flex;
+  justify-content: center;
+  position:absolute;
+  bottom:10px;
+  transition: opacity 0.65s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hidden{
+  opacity: 0;
+  transform: scale(0);
+}
